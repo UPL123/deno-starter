@@ -1,0 +1,15 @@
+{
+  // Tasks that run with "deno task <task>"
+  // Similar to "npm run <task>"
+  "tasks": {
+    "format": "deno lint && deno fmt", // Lints and formats your code
+    "bundle": "mkdir -p dist && deno bundle ./src/mod.ts ./dist/mod.js", // Bundles the TypeScript code to JavaScript
+    "dnt": "mkdir -p package && deno run --allow-all node.ts" // Converts this Deno package into a NPM package
+  },
+  "compilerOptions": {
+    // TypeScript compilation options...
+  },
+  "fmt": {
+    // Formatting options...
+  }
+}
